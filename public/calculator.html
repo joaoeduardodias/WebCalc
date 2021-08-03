@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/style.css">
+  
+    <title>Calculator</title>
+</head>
+
+<body class="bg-primary">
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid ">
+              <span class="navbar-brand mb-0 h1">Calculadora</span>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container-fluid  h-100 ">
+       
+            <div class="box col-3  justify-content-center text-center">
+                <div id="result"></div>
+                <table >
+                    <tr>
+                        <td><button type="button" class="btn btn-secondary" onclick="clean()" id="clean">C</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="clearOne()" id="clearOne" >&lt</button></td>
+                        <td><button type="button" class="btn btn-secondary" style="width: 2.2rem;" onclick="insert('/')" id="div" >/</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('*')" id="mult" >X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('7')" id="seven" >7</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('8')"  id="eight" >8</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('9')"  id="nine">9</button></td>
+                        <td><button type="button" class="btn btn-secondary" style="width: 2.2rem;" onclick="insert('-')" id="sub">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('4')" id="for" >4</button></td>
+                        <td><button type="button" class="btn btn-secondary"  onclick="insert('5')" id="five">5</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('6')"  id="six">6</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('+')" id="sum" >+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('1')"  id="one">1</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('2')"  id="two">2</button></td>
+                        <td><button type="button" class="btn btn-secondary" onclick="insert('3')"  id="three">3</button></td>
+                        <td rowspan="2"><button type="button" class="btn btn-secondary" style="height: 4.9rem;" onclick="calc()" id="calculator">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" class="btn btn-secondary" style="width: 4.6rem;" onclick="insert('0')" id="zero" >0</button></td>
+                        <td><button type="button" class="btn btn-secondary" style="width: 2.2rem;" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+                <a href="./dashboard.html" class="link-primary" >Histórico</a>
+            </div>
+        
+
+    </div>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"
+     integrity="sha512-eVL5Lb9al9FzgR63gDs1MxcDS2wFu3loYAgjIH0+Hg38tCS8Ag62dwKyH+wzDb+QauDpEZjXbMn11blw8cbTJQ=="
+     crossorigin="anonymous"
+   ></script>
+
+     <script src="./js/calculator.js"></script>
+</body>
+
+</html>

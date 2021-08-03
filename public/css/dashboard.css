@@ -1,0 +1,11 @@
+.model  {
+  display: none;
+  
+}
+table {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #9aa5c2c4 !important;
+}

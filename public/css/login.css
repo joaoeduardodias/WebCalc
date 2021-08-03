@@ -1,0 +1,13 @@
+form {
+  width: 400px;
+  height: 200px; 
+  margin: 5rem auto 0;
+  padding: 1rem;
+  border: 1px solid #6e6e6ea6;
+}
+button {
+  margin-top: 0.5rem;
+}
+.bg-primary {
+  background-color: #97a1b6c4 !important;
+}
